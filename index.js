@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const notify = new LineAPI.Notify({
-    token: "fWNWozkY1Om4vmT9cn4h4zIiuyyvFbYgdVftG802Eow"
+    token: "YOUTOKEN"
 })
 
 
@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
     res.send("hello world");
 
     notify.send({
-        message: "ทดสอบ"
+        message: "TEST"
             //sticker: 'smile' // shorthan
             // sticker : { packageId: 1, id: 2 } // exact ids
             //image: 'test.jpg' // local file
